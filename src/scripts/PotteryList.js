@@ -4,8 +4,6 @@ import { usePottery } from "./PotteryCatalog.js";
 
 export const potteryList = () => {
     const potteryToSell = usePottery();
-    console.log("potteryToSell (inside PotteryList.js):");
-    console.log(potteryToSell);
     
     const potteryListHTML = potteryToSell.map(pottery => {
             return `
