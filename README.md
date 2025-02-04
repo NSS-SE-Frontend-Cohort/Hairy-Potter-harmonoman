@@ -120,12 +120,17 @@ In the `main.js` module, invoke the `PotteryList` component function. Take its r
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Explain how you got the HTML, with the correct data, displayed in the browser?
-   > Your answer here
+   > To get the HTML to display correctly in the browser I created a function (potteryList) in the PotteryList.js file that uses the imported array of pottery to sell from the PotteryCatalog.js file. The potteryList function iterates over the array using the .map method which takes each pottery object and interpolates the object’s called attributes into the HTML code frame which is then joined together as one long string containing all the HTML code to display each object and then returned as a completed block of HTML.
+	In main.js the potteryList is called and passed to the declared potteryListHTML constant which is then passed to document.querySelector(“.potteryList”) which uses the potteryList class selector to identify where to display the HTML in the DOM.
+
 2. In the **PotteryList** module, when you iterate your pottery, you need to show the evidence of what the **weight** property's value is for the 2nd piece of pottery. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/ea5f027bcaa14b679788034901a9b447)
+
 3. The **PotteryWheel** module has a single function named `makePottery`. Why doesn't that module have all of the other code in it?
-   > Your answer here
+   > We separate our code into modules to be able to read and understand the different components involved in the program’s overall functionality. Using modules can also be used as a form of encapsulation in JavaScript.
+
 4. The pottery shop has learned that there is a set of customers that are willing to buy cracked pottery at a discounted price of $2.50. That means that the cracked pottery should now be displayed in the catalog. Explain the changes that this new business strategy would cause to your algorithm.
-   > Your answer here
+   > With this new development we would need to make changes to the toSellOrNotToSell function in the PotteryCatalog.js module. We would still need to identify if each piece is cracked or not, but now we will be adding a price to each piece. We will keep what we have for when a piece is not cracked but we need to build logic where if a piece is cracked the price of $2.50 is added as an attribute to that pottery object. We will also now want to push all the pieces to the potteryToSell array - not only the uncracked.
+
 5. In the **Kiln** module, you have a `firePottery()` function. You need to demonstrate how to use the debugger to verify the values of the parameters for that function when your code runs. Use [Loom](https://www.loom.com/) to record your browser window with the developer tools open and show those values.
-   > Paste your video's public URL here
+   > [Paste your video's public URL here](https://www.loom.com/share/b5961fddeef0409ab40d7d55b2e96250)
