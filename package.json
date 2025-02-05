@@ -1,7 +1,7 @@
 {
   "name": "the-hairy-potter",
   "version": "1.0.0",
-  "type": "module",  
+  "type": "module",
   "description": "## Setup",
   "main": "index.js",
   "directories": {
@@ -24,8 +24,10 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/plugin-transform-modules-commonjs": "^7.9.0",
-    "babel-jest": "^25.3.0",
-    "jest": "^25.3.0",
     "puppeteer": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
   }
 }
