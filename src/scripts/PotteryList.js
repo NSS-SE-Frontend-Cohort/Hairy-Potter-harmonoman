@@ -2,7 +2,7 @@ import { usePottery } from "./PotteryCatalog.js";
 
 
 
-export const potteryList = () => {
+export const PotteryList = () => {
     const potteryToSell = usePottery();
     
     const potteryListHTML = potteryToSell.map(pottery => {
